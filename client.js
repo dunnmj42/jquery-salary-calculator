@@ -8,6 +8,7 @@ function handleReady() {
     console.log('jQuery is loaded');
 
     renderToDom();
+    calcTotal();
 
     $('#submitButton').on('click', handleSubmit);
     $('#employeeList').on('click', '.deleteButton', handleDelete);
@@ -56,6 +57,8 @@ function handleSubmit() {
 
     renderToDom();
     clearInputs();
+    calcTotal();
+
     }
 }
 
@@ -63,6 +66,23 @@ function handleDelete() {
     console.log('delete click');
     
     $(this).parent().parent().remove();
+
+}
+
+function calcTotal() {
+
+    let totalMonthly = 0;
+
+    for (let employee of employees) {
+        let monthlySalary = (employee.annualSalary / 12);
+
+        totalMonthly += monthlySalary
+    }
+
+    let el = $('#totalMonthly')
+    el.empty();
+
+    el.append(`<h2 id="totalMonthly">Total Monthly: $ ${totalMonthly}</h2>`)
 
 }
 
