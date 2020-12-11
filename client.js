@@ -81,8 +81,12 @@ function calcTotal() {
 
     let el = $('#totalMonthly')
     el.empty();
-
-    el.append(`<h2 id="totalMonthly">Total Monthly: $ ${totalMonthly}</h2>`)
+    if (totalMonthly <= 20000) {
+        el.append(`<h2 id="totalMonthly">Total Monthly: $ ${totalMonthly}</h2>`)
+    } else {
+        el.append(`<h2 id="totalMonthly" class="overBudget">Total Monthly: $ ${totalMonthly}</h2>`)
+    }
+    
 
 }
 
