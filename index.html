@@ -8,24 +8,24 @@
     <script src="client.js"></script>
     <title>jQuery Salary Calculator</title>
 </head>
-<body>
-    <header>
+<body class="container">
+    <header class="appHeader">
         <h1>Salary Calculator</h1>
     </header>
-    <div>
+    <div class="appInputs">
         <h2>Add Employee</h2>
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="text" placeholder="ID">
-        <input type="text" placeholder="Title">
-        <input type="text" placeholder="Annual Salary">       
+        <input id="firstName" type="text" placeholder="First Name">
+        <input id="lastName" type="text" placeholder="Last Name">
+        <input id="idNumber" type="text" placeholder="ID">
+        <input id="jobTitle" type="text" placeholder="Title">
+        <input id="annualSalary" type="text" placeholder="Annual Salary">       
     </div>
-    <div>
+    <div class="appSubmit">
         <button>Submit</button>
     </div>
-    <div>
+    <div class="appBody">
         <h2>Employees</h2>
-        <table>
+        <table class="employeeTable">
             <thead>
                 <tr>
                     <th>First Name</th>
@@ -36,9 +36,12 @@
                     <th></th>
                 </tr>
             </thead>
+            <tbody id="employeeList">
+                <!-- Employees go here -->
+            </tbody>
         </table>
     </div>
-    <div>
+    <div class="appOutput">
         <h2>Total Monthly:</h2>
     </div>
     
