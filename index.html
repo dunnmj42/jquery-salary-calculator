@@ -10,23 +10,41 @@
     <title>jQuery Salary Calculator</title>
   </head>
   <body class="container">
-    <header class="appHeader">
+    <header class="appHeader jumbotron">
       <h1>Salary Calculator</h1>
     </header>
     <div class="appInputs">
       <h2>Add Employee</h2>
-      <input id="firstName" type="text" placeholder="First Name" />
-      <input id="lastName" type="text" placeholder="Last Name" />
-      <input id="idNumber" type="number" placeholder="ID" />
-      <input id="jobTitle" type="text" placeholder="Title" />
-      <input id="annualSalary" type="number" placeholder="Annual Salary" />
+      <div class="row">
+        <div class="form-floating col">
+            <input id="firstName" type="text" class="form-control" />
+            <label for="firstName" class="form-label">First Name</label>
+        </div>
+        <div class="form-floating col">
+            <input id="lastName" type="text" class="form-control" />
+            <label for="lastName" class="form-label">Last Name</label>
+        </div>
+        <div class="form-floating col">
+            <input id="idNumber" type="number" class="form-control" />
+            <label for="idNumber" class="form-label">ID Number</label>
+        </div>
+        <div class="form-floating col">
+            <input id="jobTitle" type="text" class="form-control" />
+            <label for="jobTitle" class="form-label">Job Title</label>
+        </div>
+        <div class="form-floating col">
+            <input id="annualSalary" type="number" class="form-control" />
+            <label for="annualSalary" class="form-label">Annual Salary</label>
+        </div>
+        <div class="appSubmit form-floating col">
+            <button class="btn btn-secondary " id="submitButton">Submit</button>
+          </div>
+      </div>
     </div>
-    <div class="appSubmit">
-      <button id="submitButton">Submit</button>
-    </div>
+
     <div class="appBody">
       <h2>Employees</h2>
-      <table class="employeeTable">
+      <table class="employeeTable table table-striped">
         <thead>
           <tr>
             <th>First Name</th>
