@@ -17,16 +17,17 @@ function handleReady() {
 function renderToDom() {
     $('#employeeList').empty();
 
-    for (let employee of employees) {
+    for (let i = 0; i < employees.length; i++) {
         $('#employeeList').append(`
             <tr class="employeeRow">
-             <td>${employee.firstName}</td>
-             <td>${employee.lastName}</td>
-             <td>${employee.idNumber}</td>
-             <td>${employee.jobTitle}</td>
-             <td>${employee.annualSalary}</td>
-             <td><button class="deleteButton">Delete</button></td>
+             <td>${employees[i].firstName}</td>
+             <td>${employees[i].lastName}</td>
+             <td>${employees[i].idNumber}</td>
+             <td>${employees[i].jobTitle}</td>
+             <td>${employees[i].annualSalary}</td>
+             <td><button id="${i}" class="deleteButton">Delete</button></td>
              </tr>`);
+             
     }
 }
 
@@ -64,7 +65,15 @@ function handleSubmit() {
 
 function handleDelete() {
     console.log('delete click');
-    
+
+    let removalTarget = this.id
+
+    console.log(removalTarget);
+
+    employees.splice(removalTarget, 1);
+
+    calcTotal();
+
     $(this).parent().parent().remove();
 
 }
