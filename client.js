@@ -24,8 +24,8 @@ function renderToDom() {
              <td>${employees[i].lastName}</td>
              <td>${employees[i].idNumber}</td>
              <td>${employees[i].jobTitle}</td>
-             <td>${employees[i].annualSalary}</td>
-             <td><button id="${i}" class="deleteButton">Delete</button></td>
+             <td>$${employees[i].annualSalary}</td>
+             <td><button id="${i}" class="deleteButton btn btn-warning btn-sm">Delete</button></td>
              </tr>`);
   }
 }
@@ -83,13 +83,16 @@ function calcTotal() {
   }
 
   let el = $("#totalMonthly");
+  let elem = $(".appOutput")
   el.empty();
   if (totalMonthly <= 20000) {
-    el.append(`<h2 id="totalMonthly">Total Monthly: $ ${Math.round(totalMonthly)}</h2>`);
+    el.append(`<h2 id="totalMonthly">Total Monthly: $ ${Number.parseFloat(totalMonthly).toFixed(2)}</h2>`);
+    elem.css("background-color", "#e9ecef")
   } else {
     el.append(
-      `<h2 id="totalMonthly" class="overBudget">Total Monthly: $ ${Math.round(totalMonthly)}</h2>`
+      `<h2 id="totalMonthly">Total Monthly: $ ${Number.parseFloat(totalMonthly).toFixed(2)}</h2>`
     );
+    elem.css("background-color", "#dc3545")
   }
 }
 

@@ -1,13 +1,59 @@
-.overBudget {
-  background-color: red;
-}
-
 .jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 2rem;
     background-color: #e9ecef;
     border-radius: .3rem;
-  }
+    text-align: center;
+}
+
+.appInputs {
+    padding: .75rem .5rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.inputs {
+    margin: 1rem;
+    display: flex;
+    align-content: center;
+}
+
+#submitButton {
+    padding-top: .95rem;
+    padding-bottom: .95rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.appSubmit {
+    padding: 0;
+}
+
+.appBody {
+    padding: .75rem .5rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+    margin-bottom: .5rem;
+}
+
+.employeeTable {
+    text-align: center;
+}
+
+.appBody h2 {
+    text-align: center;
+}
+
+.appOutput {
+    padding: .75rem .5rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+    margin-bottom: .5rem;
+    margin-top: 2rem;
+    text-align: right;
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
