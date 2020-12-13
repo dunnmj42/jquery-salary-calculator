@@ -2,9 +2,9 @@
 
 ## Description
 
-The Salary Calculator 9000 is an application that can be used to determine the total monthly cost of your companies payroll. Simply complete the input form by entering the employees information, and the app will display each employee in a convenient table right on the page. The app will also calculate your total monthly payroll cost, and alert you with an onscreen color change when it exceeds the approximate cost of a vintage Alfa Romeo.
+The Salary Calculator 9000 is an application that can be used to determine the total monthly cost of your payroll. Simply complete the input form by entering the employees information, and the app will display each employee in a convenient table right on the page. The app will also calculate your total monthly payroll cost, and alert you with an onscreen color change when it exceeds the approximate cost of a vintage Alfa Romeo.
 
-In the unfortunte event you need to lay off one or more employees, just click the delete button in their row, and they will be removed from the table. Thier monthly payroll costs will also be deducted from your total monthly payroll cost.
+In the unfortunte event you need to lay off or terminate one or more employees, just click the delete button in their row, and they will be removed from the table. Thier monthly payroll costs will also be deducted from your total monthly payroll cost.
 
 Dissolving the company and liquidating your assets? Easy! Just refresh the page, and all your laborious data entry will be for naught!
 
