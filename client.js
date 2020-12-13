@@ -4,6 +4,7 @@ let employees = [];
 
 $(document).ready(handleReady);
 
+// click handlers and initial DOM rendering 
 function handleReady() {
   console.log("jQuery is loaded");
 
@@ -14,6 +15,7 @@ function handleReady() {
   $("#employeeList").on("click", ".deleteButton", handleDelete);
 }
 
+// function to render to table
 function renderToDom() {
   $("#employeeList").empty();
 
@@ -30,6 +32,7 @@ function renderToDom() {
   }
 }
 
+// value get and object constructor
 function handleSubmit() {
   console.log("click");
 
@@ -53,12 +56,13 @@ function handleSubmit() {
     console.log(newEmployee);
     employees.push(newEmployee);
 
-    renderToDom();
-    clearInputs();
-    calcTotal();
+    renderToDom(); // re-render
+    clearInputs(); // clear form
+    calcTotal(); // monthly cost math
   }
 }
 
+// delete button deleter
 function handleDelete() {
   console.log("delete click");
 
@@ -73,6 +77,7 @@ function handleDelete() {
   $(this).parent().parent().remove();
 }
 
+// monthly total math and monthly total appendation
 function calcTotal() {
   let totalMonthly = 0;
 
@@ -91,17 +96,18 @@ function calcTotal() {
         totalMonthly
       ).toFixed(2)}</h2>`
     );
-    elem.css("background-color", "#e9ecef");
+    elem.css("background-color", "#e9ecef"); // standard color
   } else {
     el.append(
       `<h2 id="totalMonthly">Total Monthly: $ ${Number.parseFloat(
         totalMonthly
       ).toFixed(2)}</h2>`
     );
-    elem.css("background-color", "#dc3545");
+    elem.css("background-color", "#dc3545"); // overbudget color
   }
 }
 
+// clear input fields
 function clearInputs() {
   $("#firstName").val("");
   $("#lastName").val("");
