@@ -55,6 +55,15 @@
   text-align: right;
 }
 
+.py-3 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
