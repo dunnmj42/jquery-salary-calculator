@@ -83,16 +83,22 @@ function calcTotal() {
   }
 
   let el = $("#totalMonthly");
-  let elem = $(".appOutput")
+  let elem = $(".appOutput");
   el.empty();
   if (totalMonthly <= 20000) {
-    el.append(`<h2 id="totalMonthly">Total Monthly: $ ${Number.parseFloat(totalMonthly).toFixed(2)}</h2>`);
-    elem.css("background-color", "#e9ecef")
+    el.append(
+      `<h2 id="totalMonthly">Total Monthly: $ ${Number.parseFloat(
+        totalMonthly
+      ).toFixed(2)}</h2>`
+    );
+    elem.css("background-color", "#e9ecef");
   } else {
     el.append(
-      `<h2 id="totalMonthly">Total Monthly: $ ${Number.parseFloat(totalMonthly).toFixed(2)}</h2>`
+      `<h2 id="totalMonthly">Total Monthly: $ ${Number.parseFloat(
+        totalMonthly
+      ).toFixed(2)}</h2>`
     );
-    elem.css("background-color", "#dc3545")
+    elem.css("background-color", "#dc3545");
   }
 }
 
