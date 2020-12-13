@@ -8,3 +8,16 @@ Firing some dead weight? No Problem! Just click the convenient delete button for
 
 Dissolving the company and liquidating your assets? Easy! Just refresh the page, and all your laborious data entry will be for naught!
 
+## Screen Shot
+
+![App Screenshot](screenshot.jpeg)
+
+## Built With
+
+HTML 5, CSS 3, Javascript, jQuery 3.5, Bootstrap 5
+
+## Acknowledgement
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.
+
+## Support
+If you have suggestions or issues, please don't email me.
